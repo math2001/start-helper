@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+}
+
+::selection {
+	background-color: #fff5;
+}
+
+
+body, html {
+	font-family: "consolas";
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background-color: #333;
+	color: white;
+}
+
+section {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+
+article {
+	overflow: hidden;
+	margin: 1vw;
+	display: inline-block;
+	text-align: center;
+	background-color: #666;
+	width: 20vw;
+	height: 20vw;
+	border-radius: 300px;
+	position: relative;
+	cursor: pointer;
+	transition: all .4s;
+}
+article:hover {
+	transition: all .4s;
+	/* box-shadow: 0 0 50px rgba(255, 255, 255, 50); */
+}
+
+article:hover svg {
+	width: 40%;
+	height: 40%;
+	margin-left: -20%;
+	transition: all .4s;
+}
+article:hover .label {
+	bottom: 50px;
+	opacity: 1;
+	transition: all .4s;
+	font-size: 200%;
+	transform: rotateX(0deg);
+}
+
+article svg {
+	transition: all .4s;
+	width: 66%;
+	height: 66%;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	margin-left: -33%;
+	margin-top: -33%;
+}
+article .label {
+	transition: all .4s;
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	transform: rotateX(-90deg);
+	font-size: 100%;
+}
+
+
+.hide {
+	display: none;
+}
+
+.helppanel {
+	display: none;
+}
+
+.helppoint {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background-color: #0005;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	text-align: center;
+	padding-top: 5px;
+	cursor: pointer;
+	transition: all .4s;
+}
+.helppoint:hover {
+	background-color: #111;
+	transition: all .4s;
+}
+.helppoint:hover + .helppanel {
+	display: block;
+	background-color: #000a;
+	position: absolute;
+	left: 50px;
+	right: 50px;
+	top: 50px;
+	bottom: 50px;
+	padding: 20px;
+}
+.helppanel h1 {
+	margin: 0;
+	text-align: center;
+}
+
+.githubicon {
+	vertical-align: middle;
+	width: 30px;
+	height: 30px;
+	fill: white;
+}
+
+.btn {
+
+}
